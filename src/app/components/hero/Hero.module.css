@@ -1,18 +1,27 @@
 .imagewrap {
-    width: 100%;
-
+    width: 100vw;
+   
     margin: 0 auto;
     overflow: hidden;
     position: relative;
     text-align: center;
+  
 }
+.imagewrap img {
+   
+    animation: kenburns 30s infinite;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 .text1 {
     z-index: 100;
     color: #fff;
     position: absolute;
     top: 40%;
-    left: 60%;
+    left: 40%;
     font-size: 3rem;
 
     transform: translate(-50%, -50%);
@@ -33,17 +42,12 @@
     color: #fff;
     position: absolute;
     top: 60%;
-    left: 40%;
+    left: 60%;
     font-size: 3rem;
     transform: translate(-50%, -50%);
 }
 
-.imagewrap img {
-    width: 100%;
-    height: 90vh;
-    animation: kenburns 30s infinite;
 
-}
 
 @keyframes kenburns {
 
@@ -56,7 +60,7 @@
     }
 
     95% {
-        transform: scale3d(1.5, 1.5, 1.5) translate3d(-190px, -120px, 0px);
+        transform: scale3d(1.5, 1.5, 1.5) translate3d(-160px, -120px, 0px);
         animation-timing-function: ease-in;
         opacity: 1;
     }
@@ -100,6 +104,71 @@
       }
       
    */
+}
+
+@keyframes kenburns-mobile  {
+
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    95% {
+        transform: scale3d(1.5, 1.5, 1.5) translate3d(-60px, -120px, 0px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale3d(2, 2, 2) translate3d(-70px, -100px, 0px);
+        opacity: 0;
+    }
+
+    /* 0% {
+        -webkit-transform-origin: bottom left;
+        -moz-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+        -o-transform-origin: bottom left;
+        transform-origin: bottom left;
+        transform: scale(1.0);
+        -ms-transform: scale(1.0);
+      
+        
+        -webkit-transform: scale(1.0);
+       
+        
+        -o-transform: scale(1.0);
+        
+        
+        -moz-transform: scale(1.0);
+       
+      }
+      100% {
+        transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        
+        
+        -webkit-transform: scale(1
+        
+        -o-transform: scale(1.2);
+     
+        
+        -moz-transform: scale(1.2);
+      
+      }
+      
+   */
+}
+
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+    .imagewrap img {
+        animation: kenburns-mobile 30s infinite;
+    }
 }
 
 
