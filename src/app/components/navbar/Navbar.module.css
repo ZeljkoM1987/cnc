@@ -75,7 +75,7 @@
   .menuBtn {
     display: block;
     cursor: pointer;
-    right: 0;
+    margin-right: 10px;
   }
 
   .menuItems {
@@ -113,5 +113,9 @@
     height: auto;
     margin: 2px;
     cursor: pointer;
+  }
+  .title {
+    margin-left: 10px;
+
   }
 }

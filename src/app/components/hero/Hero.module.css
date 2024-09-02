@@ -1,53 +1,43 @@
 .imagewrap {
-    width: 100vw;
    
+
     margin: 0 auto;
     overflow: hidden;
     position: relative;
     text-align: center;
-  
+
+
 }
+
 .imagewrap img {
-   
-    animation: kenburns 30s infinite;
+
+    animation: kenburns 15s infinite;
     width: 100%;
-    height: 100%;
+    height: 90vh;
     object-fit: cover;
 }
 
 
 .text1 {
-    z-index: 100;
-    color: #fff;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    font-size: 3rem;
-
-    transform: translate(-50%, -50%);
+   text-align: left;
 }
 
-.text2 {
-    z-index: 100;
-    color: #fff;
+
+
+.text3 {
+   text-align: right;
+}
+
+.text {
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 3rem;
     transform: translate(-50%, -50%);
+    letter-spacing: 5px;
+    width: 60%;
+    font-size: 2.5rem;
+    color: whitesmoke;
 }
-
-.text3 {
-    z-index: 100;
-    color: #fff;
-    position: absolute;
-    top: 60%;
-    left: 60%;
-    font-size: 3rem;
-    transform: translate(-50%, -50%);
-}
-
-
 
 @keyframes kenburns {
 
@@ -106,7 +96,7 @@
    */
 }
 
-@keyframes kenburns-mobile  {
+@keyframes kenburns-mobile {
 
     0% {
         opacity: 0;
@@ -176,7 +166,25 @@
 
     .imagewrap img {
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         /*object-fit: cover;*/
     }
+
+    .text {
+        width: 100%;
+        font-size: 1.5rem;
+         line-height: 50px;
+        letter-spacing: 5px; }
+     
+
+    .text1 {
+        text-align: center;
+     }
+     
+     
+     
+     .text3 {
+        text-align: center;
+     }
+
 }
