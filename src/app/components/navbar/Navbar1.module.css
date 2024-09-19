@@ -1,0 +1,213 @@
+.NavBarItems2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    height: 80px;
+    width: 95%;
+    border-radius: 13px;
+    background:  rgba(0, 0, 0, 0.2);
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    top: 20px;
+    z-index: 1000;
+ ;
+    transition: all 0.3s linear;
+}
+
+
+.Navbar2logo {
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Forte;
+    
+}
+.logo2{
+    object-fit: contain;
+   width: 40px;
+   height: 40px;
+   z-index: inherit;
+   margin-right: 4px;
+}
+
+.Navbar2logo h2 {
+    font-size: 0.9rem;
+    font-family: 'Fortev2';
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    font-weight: 100;
+}
+
+.Navbar2logo h1 {
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    font-family: 'Fortev2';
+    font-weight: 100;
+
+}
+
+.nav2menu {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-gap: 10px;
+    list-style: none;
+    align-items: center;
+
+}
+
+
+.nav2links {
+    
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0.7rem 1rem;
+    white-space: nowrap;
+    transition: all 0.3s linear;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.nav2links:hover {
+    background-color: #19423E;
+    border-radius: 4px;
+    transition: all 0.3s linear;
+    color: wheat!important;
+
+}
+
+.nav2links i {
+    padding-right: 10px;
+}
+
+.nav2-links-mobile {
+    display: none;
+}
+
+.nav2-tel {
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    border-radius: 0.3rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background-color: wheat;
+    border: none;
+    cursor: pointer;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+
+
+.nav2-tel:hover {
+    background-color: #151516;
+    color: white;
+}
+
+.menu2-icons {
+    display: none;
+}
+
+.close2{
+    color: #333 !important;
+}
+.active2 i{
+    color: wheat;
+}
+
+/*FOR MOBILE VIEW*/
+@media screen and (max-width:1080px) {
+
+    .NavBarItems2 {
+        opacity: 100;
+    }
+
+    .nav2-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+        align-items: stretch;
+        background: whitesmoke;
+        
+        position: absolute;
+        top: 0;
+        left: 150%;
+        opacity: 0;
+        margin: 0;
+        padding: 80px 0 30px 0;
+        z-index: -100;
+        text-align: center;
+        transition: 200ms ease;
+
+    }
+
+    .nav2-menu.active {
+        left: 0;
+        opacity: 100;
+        z-index: -100;
+        transition: 200ms ease;
+        border-radius: 13px;
+    }
+
+    .nav2-links {
+        display: block;
+        font-size: 1.5rem;
+        width: 100%;
+        padding: 1.5rem 0rem;
+        color: #333!important;
+       
+    }
+    .fix{
+        text-indent: -20px;
+    }
+    .nav2-links i{
+        font-size: 1.8rem;
+    }
+
+    .nav2-links:hover {
+        background-color: #19423E;
+        transition: none;
+        color: wheat!important;
+    }
+    .nav2-links:hover i{
+        color: wheat;
+    }
+    
+
+
+    .nav2-tel {
+        display: block;
+        text-decoration: none;
+        color: #333;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 1rem;
+        border-radius: 13px;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        letter-spacing: 2px;
+        opacity: 100%;
+        background-color: wheat;
+    }
+
+    .menu2-icons {
+        display: block;
+        
+    }
+
+    .menu2-icons i {
+        font-size: 2.2rem;
+        color: white;
+        cursor: pointer;
+    }
+}
