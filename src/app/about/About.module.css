@@ -1,0 +1,173 @@
+.container {
+    position: relative;
+    background-color: #222222;
+    border-radius: 15px;
+    padding: 73px;
+    margin-top: 100px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .title {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .aboutintro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  
+  }
+  
+  
+  
+  .aboutImage {
+    max-width: 60%;
+    max-height: 400px;
+    object-fit: cover;
+    border: 5px solid whitesmoke;
+  }
+  
+  
+  .introtext {
+    text-align: center;
+    color: whitesmoke;
+    max-width: 50%;
+    padding: 14px;
+    background-image: linear-gradient(90deg,
+        rgba(165, 215, 232, 0.42) 0%,
+        rgba(255, 255, 255, 0) 100%);
+    border: 5px solid whitesmoke;
+   
+  }
+  
+  .introtext h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 18px;
+  
+  }
+  
+  .introtext p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  
+  .aboutItems {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .aboutItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    list-style: none;
+    padding: 25px;
+    background-image: linear-gradient(90deg,
+        rgba(165, 215, 232, 0.42) 0%,
+        rgba(255, 255, 255, 0) 100%);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+  }
+  
+  .aboutItem:hover {
+    background-size: 100% 100%;
+  }
+  
+  .aboutItem h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+  .aboutItem p {
+    font-size: 25px;
+  }
+  
+  .feature {
+    color: whitesmoke;
+  
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+  
+  .feature h2 {
+    font-size: 28px;
+  }
+  
+  .cardsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  @media screen and (max-width: 830px) {
+    .container {
+      background-color: transparent;
+      padding-left: 0;
+      padding-right: 0;
+      margin: auto;
+      padding-top: 20px;
+    }
+  
+    .content {
+      flex-direction: column;
+    }
+  
+    .title {
+      font-size: 28px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .aboutItems {
+      margin-top: 29px;
+    }
+  
+    .aboutItem {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    .aboutImage {
+      max-width: 100%;
+      width: 100%;
+    }
+  
+    .aboutintro {
+      flex-direction: column;
+    }
+  
+    .introtext {
+      max-width: 100%;
+      width: 100%;
+    }
+  
+    .feature {
+      margin-top: 10px;
+    }
+  
+    .cardsection {
+      flex-direction: column;
+    }
+  }

@@ -22,10 +22,11 @@
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: whitesmoke;
+    color:green;
     z-index: 2;
     width: 80%;
     font-weight: 400;
+    
 }
 
 .herotext5 h1 {
@@ -61,6 +62,7 @@
     .herotext5 h1 {
         font-size: 3rem;
         text-align: right;
+        
     }
     .herovideo{
         left: 72%;

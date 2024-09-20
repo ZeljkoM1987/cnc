@@ -1,10 +1,10 @@
-
+"use client";
 import React from "react";
-import { Card } from "./Card.jsx"
-import styles from "./About1.module.css";
+import { Card } from "../components/card/Card"
+import styles from "./About.module.css";
 
 
-export const About1 = () => {
+export const About = () => {
   return (
     <section className={styles.container} id="about">
       <h2 className={styles.title}>O NAMA</h2>
@@ -51,3 +51,4 @@ export const About1 = () => {
 
   );
 };
+export default About;

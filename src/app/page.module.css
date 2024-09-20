@@ -1,5 +1,7 @@
 .app {
-  background-color: #04152d;
+  /*background-color: #04152d;*/
+  background-color: #2f2f2f;
+  background-image: url('/images/back4.png');
   margin: 0;
  
 }

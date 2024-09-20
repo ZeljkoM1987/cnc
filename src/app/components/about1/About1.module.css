@@ -5,8 +5,6 @@
   padding: 73px;
   margin-top: 100px;
   z-index: 1;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .title {
@@ -17,52 +15,108 @@
   text-transform: uppercase;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
 
 .aboutintro {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+ position: relative;
   align-items: center;
   margin: auto;
+ 
+  
 
 }
-
 
 
 .aboutImage {
-  max-width: 50%;
+  width: 50%;
   max-height: 400px;
   object-fit: cover;
+  border: 5px solid whitesmoke;
 }
 
 
+
 .introtext {
+ 
+
   text-align: center;
   color: whitesmoke;
   max-width: 50%;
-  padding: 14px;
-  background-image: linear-gradient(90deg,
-      rgba(165, 215, 232, 0.42) 0%,
-      rgba(255, 255, 255, 0) 100%);
+  height: 360px;
+  position: relative;
+  border-right: 5px solid green;
+  border-top: 5px solid green;
+  border-bottom: 5px solid green;
+  margin: auto;
+  padding: 10px;
+
+}
+.lefttext {
+  max-width: 50%;
+  border: 2px solid green;
+  height:300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('/images/Back6.png'); 
+  background-color: black;
+}
+
+.introstatimage {
+  height: 40px;
+  width: auto;
+}
+.introstat{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.introstat p {
+  margin-left: 20px;
+}
+.lefttext h2 {
+  color: whitesmoke;
+  font-family: var(--font-chakra);
+  font-size: 36px;
+  padding-top: 10px;
+  margin: auto;
+}
+.lefttext h3 {
+  color: whitesmoke;
+  font-family: var(--font-chakra);
+  font-size:20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+}
+.introback {
+  position: absolute;
+  height: 360px;
+  width: 100%;
+  top:0;
+  left:0;
+  object-fit: cover;
+  filter: opacity(0.1);
+  background-color: #222222;
+  z-index: -2;
 }
 
 .introtext h2 {
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 18px;
-
 }
 
 .introtext p {
   text-align: justify;
   font-size: 16px;
   line-height: 26px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .aboutItems {
