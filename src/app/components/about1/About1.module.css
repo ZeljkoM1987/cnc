@@ -3,6 +3,7 @@
   background-color: #222222;
   border-radius: 15px;
   padding: 73px;
+  padding-bottom: 100px;
   margin-top: 100px;
   z-index: 1;
   clip-path: polygon(40px 0px, 100% 0px, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0px 100%, 0px 40px); 
@@ -52,23 +53,15 @@
   border-right: 5px solid green;
   border-top: 5px solid green;
   border-bottom: 5px solid green;
+  
   */
   margin: auto;
   padding: 10px;
   margin-left: 3rem;
+ 
 
 }
-.lefttext {
-  max-width: 50%;
-  border: 2px solid green;
-  height:300px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: url('/images/Back6.png'); 
-  background-color: black;
-}
+
 
 .introstatimage {
   height: 40px;
@@ -84,22 +77,7 @@
 .introstat p {
   margin-left: 20px;
 }
-.lefttext h2 {
-  color: whitesmoke;
-  font-family: var(--font-chakra);
-  font-size: 36px;
-  padding-top: 10px;
-  margin: auto;
-}
-.lefttext h3 {
-  color: whitesmoke;
-  font-family: var(--font-chakra);
-  font-size:20px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: auto;
-}
+
 .introback {
   position: absolute;
   height: 360px;
@@ -180,10 +158,10 @@
 
 @media screen and (max-width: 830px) {
   .container {
-    background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
+    background-color: #222222;
+    padding: 20px 0;
     margin: auto;
+    
     padding-top: 20px;
   }
 
@@ -213,19 +191,17 @@
   }
 
   .aboutintro {
-    flex-direction: column;
+    flex-direction: column-reverse;
+
   }
 
   .introtext {
-    max-width: 100%;
     width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin: 10px 5px;
+    height: auto;
   }
 
-  .feature {
-    margin-top: 10px;
-  }
-
-  .cardsection {
-    flex-direction: column;
-  }
+ 
 }

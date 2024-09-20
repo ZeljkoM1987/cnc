@@ -3,10 +3,11 @@ import { Inter, Chakra_Petch } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-const chakra_Petch = Chakra_Petch({ subsets: ["latin"],
-  weight:['400', '700'],
-  variable:'--font-chakra'
- });
+const chakra_Petch = Chakra_Petch({
+  subsets: ["latin"],
+  weight: ['400', '700'],
+  variable: '--font-chakra'
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -16,7 +17,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${chakra_Petch.variable}`}>{children}</body>
+      <body className={`${chakra_Petch.variable}`}>
+        {/*navbar */}
+        <main>{children}</main>
+        {/*footer*/}
+      </body>
     </html>
   );
 }
