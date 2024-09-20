@@ -3,6 +3,7 @@ import React from "react";
 
 import styles from "./About1.module.css";
 
+import Button from "../button/Button";
 
 export const About1 = () => {
   return (
@@ -33,8 +34,7 @@ export const About1 = () => {
               <img src="/graph.svg" alt="company" className={styles.introstatimage}/>
               <p>Naša misija je jednostavna. Želimo da izgradimo dugoročne odnose sa našim klijentima, zasnovane na poverenju, kvalitetu i obostranom uspjehu.</p>
             </div>
-            
-                <button>Više o nama</button>
+                <Button path="/onama"> O nama</Button>
           </div>
         </div>
         {/* 
