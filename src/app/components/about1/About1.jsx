@@ -17,7 +17,7 @@ export const About1 = () => {
             className={styles.aboutImage}
           />
            <div className={styles.introtext}>
-            <img src="/images/back2.jpg" alt="back" className={styles.introback}/>
+           {/** <img src="/images/back2.jpg" alt="back" className={styles.introback}/>*/} 
             <h2>Ko smo mi?</h2>
             <div className={styles.introstat}>
               <img src="/company.svg" alt="company" className={styles.introstatimage}/>
@@ -37,6 +37,7 @@ export const About1 = () => {
                 <button>Više o nama</button>
           </div>
         </div>
+        {/* 
         <div className={styles.aboutintro}>
           <div className={styles.lefttext}>
             <h2>Ko smo mi?</h2>
@@ -63,12 +64,12 @@ export const About1 = () => {
                 <button>Više o nama</button>
           </div>
         </div>
-       
-        
+       */}
+        {/** 
         <div className={styles.feature}>
           <h2>Naše karakteristike</h2>
         </div>
-        
+        */}
    
     </section>
 

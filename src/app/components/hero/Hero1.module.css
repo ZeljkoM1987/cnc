@@ -15,6 +15,7 @@
     height: auto;
     object-fit: cover;
     transform: translate(-50%,-50%);
+    
 
 }
 .herotext5 {
@@ -22,7 +23,7 @@
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color:green;
+    color:whitesmoke;
     z-index: 2;
     width: 80%;
     font-weight: 400;

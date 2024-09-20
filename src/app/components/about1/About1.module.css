@@ -5,6 +5,7 @@
   padding: 73px;
   margin-top: 100px;
   z-index: 1;
+  clip-path: polygon(40px 0px, 100% 0px, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0px 100%, 0px 40px); 
 }
 
 .title {
@@ -33,6 +34,8 @@
   max-height: 400px;
   object-fit: cover;
   border: 5px solid whitesmoke;
+  clip-path: polygon(40px 0px, 100% 0px, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0px 100%, 0px 40px);
+
 }
 
 
@@ -45,11 +48,14 @@
   max-width: 50%;
   height: 360px;
   position: relative;
+  /*
   border-right: 5px solid green;
   border-top: 5px solid green;
   border-bottom: 5px solid green;
+  */
   margin: auto;
   padding: 10px;
+  margin-left: 3rem;
 
 }
 .lefttext {
