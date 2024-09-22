@@ -4,7 +4,7 @@ import { Card } from "../components/card/Card"
 import styles from "./About.module.css";
 
 
-export const About = () => {
+export const AboutPage = () => {
   return (
     <section className={styles.container} id="about">
       <h2 className={styles.title}>O NAMA</h2>
@@ -51,4 +51,4 @@ export const About = () => {
 
   );
 };
-export default About;
+export default AboutPage;

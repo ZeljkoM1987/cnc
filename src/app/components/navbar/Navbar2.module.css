@@ -90,6 +90,12 @@
     color: #fff;
     text-decoration: none;
   }
+
+ .active {
+    transition: all 300ms ease-in-out;
+    border-bottom: 2px solid var(--main-green);
+   
+  }
   
   @media screen and (max-width: 830px) {
     .navbar {
@@ -164,7 +170,12 @@
       clip-path: polygon(40px 0px, 100% 0px, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0px 100%, 0px 40px);
     }
   
-    
+    .menuItemsSidebar li{
+      width: 100%;
+   
+    text-align: center;
+    padding-bottom: 10px;
+    }
   
     .language {
       display: none;
@@ -172,6 +183,7 @@
   
     .language1 {
       display: flex;
+      justify-content: center;
     }
   
     .language1 img {

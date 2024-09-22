@@ -2,10 +2,13 @@
 
 import React, { useState, useEffect } from "react";
 import styles from "./Navbar2.module.css";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export const Navbar2 = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [navbarColor, setNavbarColor] = useState(false);
+  const pathname = usePathname();
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
@@ -43,18 +46,18 @@ export const Navbar2 = () => {
             alt="menu-button"
             onClick={() => setMenuOpen(!menuOpen)}
           />
-          <ul className={`${styles.menuItems}`}>
-            <li>
-              <a href="#home">Početna</a>
+          <ul className={styles.menuItems}>
+            <li className={pathname === "/" ? `${styles.active}` : ""}>
+              <Link href="/">Početna</Link>
             </li>
-            <li>
-              <a href="#about">O nama</a>
+            <li className={pathname === "/about" ? `${styles.active}` : ""}>
+              <Link href="/about">O nama</Link>
             </li>
-            <li>
-              <a href="#projects">Projekti</a>
+            <li className={pathname === "/projects" ? `${styles.active}` : ""}>
+              <Link href="/projects">Projekti</Link>
             </li>
-            <li>
-              <a href="#contact">Kontakt</a>
+            <li className={pathname === "/contact" ? `${styles.active}` : ""}>
+              <Link href="/contact">Kontakt</Link>
             </li>
             <li>
               <div className={styles.language1}>
@@ -75,17 +78,17 @@ export const Navbar2 = () => {
           className={styles.menuItemsSidebar}
           onClick={() => setMenuOpen(false)}
         >
-          <li>
-            <a href="#home">Početna</a>
+          <li className={pathname === "/" ? `${styles.active}` : ""}>
+            <Link href="/">Početna</Link>
           </li>
-          <li>
-            <a href="#about">O nama</a>
+          <li className={pathname === "/about" ? `${styles.active}` : ""}>
+            <Link href="/about">O nama</Link>
           </li>
-          <li>
-            <a href="#projects">Projekti</a>
+          <li className={pathname === "/projects" ? `${styles.active}` : ""}>
+            <Link href="/projects">Projekti</Link>
           </li>
-          <li>
-            <a href="#contact">Kontakt</a>
+          <li className={pathname === "/contact" ? `${styles.active}` : ""}>
+            <Link href="/contact">Kontakt</Link>
           </li>
           <li>
             <div className={styles.language1}>
