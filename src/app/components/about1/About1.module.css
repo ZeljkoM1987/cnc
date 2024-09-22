@@ -358,7 +358,7 @@ align-items: center;
     text-align: center;
     align-items: center;
     font-style: italic;
-    font-size: large;
+    font-size: x-large;
     font-family: var(--font-chakra);
     position: relative;
   }
