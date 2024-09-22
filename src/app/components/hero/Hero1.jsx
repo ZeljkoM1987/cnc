@@ -13,13 +13,13 @@ export const Hero1 = () => {
         <video autoPlay muted loop className={styles.herovideo} src="hero.mp4" ></video>
 
         <div className={styles.herotext5}>
-          <Slide direction="up" >
+          <Slide direction="down" >
             <h1>Preciznost</h1>
             </Slide>
             <Slide direction="left" >
             <h1>Pouzdanost</h1>
             </Slide>
-            <Slide direction="right" >
+            <Slide direction="up" >
             <h1>Odgovornost</h1>
             </Slide>
          
