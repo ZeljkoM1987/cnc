@@ -5,9 +5,11 @@ import styles from "./About1.module.css";
 
 import Button from "../button/Button";
 
-import { Bounce } from "react-awesome-reveal";
+import { Bounce} from "react-awesome-reveal";
 
 import Image from "next/image";
+
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 
 export const About1 = () => {
   return (
@@ -64,6 +66,8 @@ export const About1 = () => {
           </div>
         </div>
       </section>
+      <ParallaxProvider>
+      <Parallax translateY={[0, 30]}>
       <div className={styles.banner}>
         <blockquote className={styles.blockquote}>
           "Naša vizija je da svaki projekt pretvorimo u priliku za rast,
@@ -76,6 +80,8 @@ export const About1 = () => {
           metala.
         </blockquote>
       </div>
+      </Parallax>P
+      </ParallaxProvider>
       <section className={styles.container1}>
         <div className={styles.introtext2}>
           <h2>Šta mi radimo?</h2>
@@ -114,6 +120,16 @@ export const About1 = () => {
           <Button path="about">Više o Servisima</Button>
         </div>
       </section>
+   
+      <div className={styles.contacthome}>
+        <h2>Zainteresovani ste za naše usluge ili su vam potrebne dodatne informacije?</h2>
+        <h2>Naš tim Vam stoji na raspolaganju!</h2>
+        <p>Kontaktirajte nas putem jednog od kanala komunikacije navedenih u kontakt stranici</p>
+        <div className={styles.aboutbutton}>
+          <Button path="Contact">Kontaktirajte nas</Button>
+        </div>
+      </div>
+      
     </>
   );
 };

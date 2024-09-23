@@ -35,16 +35,16 @@ export const Footer = () => {
             <ul>
               <li>
                 <span className="fa fa-map-marker icon"></span>
-                <p>Banjalučki put, Nova Topola, BiH</p>
+                <p>Krajišnik 35, Nova Topola, BiH</p>
               </li>
               <li>
                 <span className="fa fa-phone icon"></span>
 
-                <p>(+387) 66 954 994</p>
+                <p>(+387) 65 415 657</p>
               </li>
               <li>
                 <span className="fa fa-paper-plane icon"></span>
-                <p>loungebarcentar@yahoo.com</p>
+                <p>nemanj@gmail.com</p>
               </li>
             </ul>
           </div>
@@ -60,12 +60,12 @@ export const Footer = () => {
             <ul>
               <li>
                 <span className="fa-regular fa-clock icon"></span>
-                <p>Ponedeljak - Subota: 06h - 24h</p>
+                <p>Ponedeljak - Subota: 07h - 15h</p>
               </li>
              
               <li>
                 <span className="fa-regular fa-clock icon"></span>
-                <p>Nedelja: 08h-16h</p>
+                <p>Nedelja: zatvoreno</p>
               </li>
             </ul>
           </div>
@@ -80,7 +80,8 @@ export const Footer = () => {
             </div>
             <div className="postlist">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1640.0595510047672!2d17.306881024393203!3d45.05256868295168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475df7e0dc82a1c9%3A0x375c82f1075eb7b4!2z4oCcQ0VOVEFS4oCdIENhZmU!5e0!3m2!1ssr!2sba!4v1710635359841!5m2!1ssr!2sba"
+               src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d677.091936453523!2d17.321031653618604!3d45.056097863837415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1skrajisnik%2035!5e1!3m2!1shr!2sba!4v1727126532688!5m2!1shr!2sba"
+        
                 width="100%"
                 height="300"
                 style={{ border: "0", overflow: "hidden", margin: "0" }}
@@ -96,7 +97,7 @@ export const Footer = () => {
       <section className="foot">
         <div className="footInner">
           <p>
-            Copyright {new Date().getFullYear()} lounge bar Centar. All Rights
+            Copyright {new Date().getFullYear()} Hefest CAM. All Rights
             Reserved
           </p>
           <div>

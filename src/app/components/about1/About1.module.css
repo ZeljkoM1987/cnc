@@ -10,6 +10,8 @@
 
 
 }
+
+
 .container1 {
   position: relative;
   background-color: #222222;
@@ -265,6 +267,15 @@ display: none;
   
   
 }
+.contacthome {
+  margin: auto;
+  text-align: center;
+  padding: 50px 0;
+  color: whitesmoke;
+}
+.contacthome p {
+  margin: 20px 0;
+}
 
 @media screen and (max-width: 830px) {
   .container {
@@ -384,4 +395,19 @@ align-items: center;
 	bottom: -2rem;
 }
   
+.contacthome {
+  margin: auto;
+  text-align: center;
+  padding: 50px 0;
+  color: whitesmoke;
+  max-width: 90%;
+}
+.contacthome p {
+ display: none;
+}
+.contacthome h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
 }
