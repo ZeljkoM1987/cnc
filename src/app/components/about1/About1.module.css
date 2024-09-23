@@ -276,6 +276,10 @@ display: none;
 .contacthome p {
   margin: 20px 0;
 }
+.contacthome h2 {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
 
 @media screen and (max-width: 830px) {
   .container {
@@ -408,6 +412,7 @@ align-items: center;
 .contacthome h2 {
   font-size: 20px;
   margin-bottom: 20px;
+  font-weight: 300;
 }
 
 }

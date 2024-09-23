@@ -3,7 +3,7 @@ import { Inter, Chakra_Petch } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "./components/navbar/Navbar";
 import { Navbar2 } from "./components/navbar/Navbar2";
-import { Footer } from "./components/footer/Footer";
+import { Footer1 } from "./components/footer/Footer1";
 
 const inter = Inter({ subsets: ["latin"] });
 const chakra_Petch = Chakra_Petch({
@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
         <Navbar2></Navbar2>
         <main>{children}</main>
         {/*footer*/}
-        <Footer></Footer>
+        <Footer1></Footer1>
       </body>
     </html>
   );
