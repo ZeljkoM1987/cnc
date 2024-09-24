@@ -16,6 +16,7 @@
   position: relative;
   background-color: #222222;
   background-image: url('/images/back10.jpg');
+  background-attachment: fixed;
   background-size: contain;
   border-radius: 15px;
   padding: 73px;
@@ -172,6 +173,7 @@
   text-align: center;
   align-items: center;
   display: flex;
+  margin-bottom: 3rem;
 }
   .banner .blockquote { 
   color: whitesmoke;
@@ -274,12 +276,13 @@ display: none;
   color: whitesmoke;
 }
 .contacthome p {
-  margin: 20px 0;
+  margin: 40px 0;
+  color: whitesmoke;
+  text-align: center;
+  font-size: x-large;
+  font-family: var(--font-chakra);
 }
-.contacthome h2 {
-  font-weight: 300;
-  margin-bottom: 10px;
-}
+
 
 @media screen and (max-width: 830px) {
   .container {
@@ -362,6 +365,7 @@ align-items: center;
   text-align: center;
   align-items: center;
   display: flex;
+  margin-bottom: 3rem;
   }
 
 
@@ -402,17 +406,15 @@ align-items: center;
 .contacthome {
   margin: auto;
   text-align: center;
-  padding: 50px 0;
+ 
   color: whitesmoke;
   max-width: 90%;
 }
 .contacthome p {
- display: none;
-}
-.contacthome h2 {
-  font-size: 20px;
-  margin-bottom: 20px;
-  font-weight: 300;
+  color: whitesmoke;
+  text-align: center;
+  font-size: x-large;
+  font-family: var(--font-chakra);
 }
 
 }

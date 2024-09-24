@@ -5,11 +5,11 @@ import styles from "./About1.module.css";
 
 import Button from "../button/Button";
 
-import { Bounce} from "react-awesome-reveal";
+import { Bounce } from "react-awesome-reveal";
 
 import Image from "next/image";
 
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 export const About1 = () => {
   return (
@@ -67,20 +67,20 @@ export const About1 = () => {
         </div>
       </section>
       <ParallaxProvider>
-      <Parallax translateY={[0, 30]}>
-      <div className={styles.banner}>
-        <blockquote className={styles.blockquote}>
-          "Naša vizija je da svaki projekt pretvorimo u priliku za rast,
-          inovaciju i postizanje vrhunskog kvaliteta u CNC obradi metala."
-        </blockquote>
-      </div>
-      <div className={styles.bannerMobile}>
-        <blockquote className={styles.blockquote}>
-          Naša misija je inovacija i postizanje vrhunskog kvaliteta u CNC obradi
-          metala.
-        </blockquote>
-      </div>
-      </Parallax>P
+        <Parallax translateY={[0, 30]}>
+          <div className={styles.banner}>
+            <blockquote className={styles.blockquote}>
+              Naša vizija je da svaki projekt pretvorimo u priliku za rast,
+              inovaciju i postizanje vrhunskog kvaliteta u CNC obradi metala.
+            </blockquote>
+          </div>
+          <div className={styles.bannerMobile}>
+            <blockquote className={styles.blockquote}>
+              Naša misija je inovacija i postizanje vrhunskog kvaliteta u CNC
+              obradi metala.
+            </blockquote>
+          </div>
+        </Parallax>
       </ParallaxProvider>
       <section className={styles.container1}>
         <div className={styles.introtext2}>
@@ -120,16 +120,18 @@ export const About1 = () => {
           <Button path="about">Više o Servisima</Button>
         </div>
       </section>
-   
+
       <div className={styles.contacthome}>
-        <h2>Zainteresovani ste za naše usluge ili su vam potrebne dodatne informacije?</h2>
-        <h2>Naš tim Vam stoji na raspolaganju!</h2>
-        <p>Kontaktirajte nas putem jednog od kanala komunikacije navedenih u kontakt stranici</p>
+        <p>
+          Zainteresovani ste za naše usluge ili su vam potrebne dodatne
+          informacije?
+        </p>
+        <p>Naš tim Vam stoji na raspolaganju!</p>
+
         <div className={styles.aboutbutton}>
-          <Button path="Contact">Kontaktirajte nas</Button>
+          <Button path="/contact">Kontaktirajte nas</Button>
         </div>
       </div>
-      
     </>
   );
 };
