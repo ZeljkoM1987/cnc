@@ -1,26 +1,59 @@
+"use client";
 import React from "react";
 
 import styles from "./contactPage.module.css";
 import Button from "../components/button/Button";
 import Image from "next/image";
+import { Bounce } from "react-awesome-reveal";
 
 const ContactPage = () => {
   return (
     <section className={styles.contactPageContainer}>
       <div className={styles.headercontainer}>
         <h1>KONTAKT</h1>
-
       </div>
-      <div className={styles.textcontainer}>
-          <p className={styles.contactheadertext}>
-            Bilo da imate neko pitanje, zelite da zapocnete novi projekat ili
-            jednostavno zelite da nas kontaktirate.
-          </p>
-          <br />
+      <div className={styles.firstBlock}>
+        <div className={styles.textcontainer}>
+          <ul className={styles.contactheadertext}>
+            <li>
+              <i className="fa fa-question" aria-hidden="true"></i>{" "}
+              <p>Ako imate neko pitanje za nas.</p>
+            </li>
+            <li>
+              <i className="fa fa-cogs" aria-hidden="true"></i>{" "}
+              <p>Ako imate novi projekat na umu.</p>
+            </li>
+            <li>
+              <i className="fa fa-comment" aria-hidden="true"></i>{" "}
+              <p>Ako zelite da ostanete u kontaktu.</p>
+            </li>
+          </ul>
+          {/* 
           <p className={styles.contactheadertext}>
             Budite slobodni da nam posaljete poruku preko nase kontakt forme.
           </p>
+          */}
+          <div className={styles.pisitename}>
+            <h2>
+              Pišite nam{" "}
+              <i className="fa fa-exclamation" aria-hidden="true"></i>{" "}
+              <i className="fa fa-exclamation" aria-hidden="true"></i>
+            </h2>
+            <h3>Radujemo se Vašem dolasku.</h3>
+          </div>
         </div>
+
+        <div className={styles.widgetcontainer}>
+          <Bounce>
+            <img
+              src="/images/222.png"
+              alt="Me sitting with a laptop"
+              className={styles.roboImage}
+            />
+          </Bounce>
+        </div>
+      </div>
+
       <div className={styles.contactwrapper}>
         <form
           name="contact"
