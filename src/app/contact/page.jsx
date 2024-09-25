@@ -14,7 +14,7 @@ const ContactPage = () => {
       </div>
       <div className={styles.firstBlock}>
         <div className={styles.textcontainer}>
-          <ul className={styles.contactheadertext}>
+          <ul >
             <li>
               <i className="fa fa-question" aria-hidden="true"></i>{" "}
               <p>Ako imate neko pitanje za nas.</p>
