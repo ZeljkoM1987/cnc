@@ -81,18 +81,23 @@ clip-path: polygon(40px 0px, 100% 0px, 100% calc(100% - 40px), calc(100% - 40px)
 .pitanjalistitem {
   line-height: 4;
   color: var(--main-green);
-  
 }
+
 @media screen and (max-width: 830px) {
   .pitanjalistitem{
       margin-bottom: 0;
   }
 }
 
+.pitanjalistitem i{
+  display: inline-flex;
+}
+
 .pitanjatext {
   font: 300 18px 'Lato', sans-serif;
   letter-spacing: 1.9px;
   color: whitesmoke;
+  padding-top: 10px;
 }
 
 .pitanje1 {
@@ -105,6 +110,20 @@ clip-path: polygon(40px 0px, 100% 0px, 100% calc(100% - 40px), calc(100% - 40px)
 
 .pitanje3 {
   margin-left: 53px;
+}
+
+@media screen and (max-width: 830px) {
+  .pitanje1 {
+    margin-left: 50px;
+  }
+  
+  .pitanje2 {
+    margin-left: 25px;
+  }
+  
+  .pitanje3 {
+    margin-left: 33px;
+  }
 }
 
  
