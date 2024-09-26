@@ -99,6 +99,11 @@ clip-path: polygon(40px 0px, 100% 0px, 100% calc(100% - 40px), calc(100% - 40px)
   color: whitesmoke;
   padding-top: 10px;
 }
+@media screen and (max-width: 830px) {
+  .pitanjatext {
+    padding-top: 0;
+  }
+}
 
 .pitanje1 {
   margin-left: 70px;
