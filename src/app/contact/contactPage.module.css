@@ -40,12 +40,13 @@
 .firstBlock{
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   background: rgba(33, 30, 30, 0.62);
   backdrop-filter: blur(3.2px);
   -webkit-backdrop-filter: blur(3.2px);
   box-shadow: 2px 2px 8px 0 var(--main-green);
-  padding: 2rem 20px;
+  padding: 1rem 20px;
 position: relative;
   max-width: 1200px;
   margin: 3rem auto;
@@ -55,86 +56,80 @@ position: relative;
 @media screen and (max-width: 830px) {
   .firstBlock{
     max-width: 90%;
-    border: 1px solid var(--main-green);
+    margin-bottom: 6rem;
     max-height: 900px;
   }
 }
 
-.textcontainer{
-  margin: 0 auto;
-  font-family: var(--font-chakra);
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  justify-content: space-evenly;
-  max-width: 700px;
-  }
-  @media screen and (max-width: 830px) {
-    .textcontainer{
-      text-align: center;
-    }
-    .textcontainer p{
-      padding-bottom: 20px;
-    }
-  }
+.pitanjatcontainer{
+  max-width: 450px
+}
 
-  .textcontainer ul{
-    max-width: 900px;
-    font-size: x-large;
-    font-family: var(--font-chakra);
-  }
-
-  .textcontainer ul:nth-of-type(1) {
-    /*
-    list-style-position: inside;
-    padding: 20px;
-    border-left: solid 2px var(--main-green);
-    */
-    list-style:none;
-  }
-
-  .textcontainer li{
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: space-around;
-  
-  }
-
-  .textcontainer li i{
-    color: var(--main-green);
-    font-size: x-large;
-    width: 55px;
-  }
-
-  @media screen and (max-width: 830px) {
-    .contactheadertext{
-      font-size: large;
-      text-align: left;
-    }
-  }
-
-.pisitename{
-  text-align: center;
-  padding: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  clip-path: polygon(40px 0px, 100% 0px, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0px 100%, 0px 40px);
-  border: 1px solid var(--main-green);
-  font-size: x-large;
-  font-style: italic;
+.pitanjatlist {
+  list-style-type: none;
+  /*margin-left: -30px;*/
+  padding-right: 20px;
+  padding-bottom: 40px;
 }
 
 @media screen and (max-width: 830px) {
-  .pisitename{
-    font-size: large;
+  .pitanjalist{
+    padding-bottom: 20px;
   }
 }
 
-
-.pisitename i{
+.pitanjalistitem {
+  line-height: 4;
   color: var(--main-green);
-  font-size: xx-large;
+  
 }
+@media screen and (max-width: 830px) {
+  .pitanjalistitem{
+      margin-bottom: 0;
+  }
+}
+
+.pitanjatext {
+  font: 300 18px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: whitesmoke;
+}
+
+.pitanje1 {
+  margin-left: 70px;
+}
+
+.pitanje2 {
+  margin-left: 45px;
+}
+
+.pitanje3 {
+  margin-left: 53px;
+}
+
+ 
+     .pisitenam {
+      position: relative;
+      font-size: 22px;
+      text-align: center;
+      width: 100%;
+      margin: 1rem auto;
+      padding: 0;
+    }
+    .pisitenam h2{
+      letter-spacing: 2px;
+      color: var(--main-green);
+    }
+  
+    .radujemo {
+      margin-top: 0.5rem;
+      font: 200 14px 'Oswald', sans-serif;
+      color: #777;
+      letter-spacing: 1px;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  
 
 .widgetcontainer{
   margin: 0px -90px -120px -40px;
@@ -166,28 +161,27 @@ position: relative;
   width: 500px;
   height: auto;
   max-width: 100%;
-  
- 
 }
-
-
-
 
 .contactwrapper{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: baseline;
-    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem auto;
     padding: 20px;
     position: relative;
-    max-width: 900px;
+    max-width: 1200px;
+    background: rgba(33, 30, 30, 0.62);
+    backdrop-filter: blur(3.2px);
+    box-shadow: 2px 2px 8px 0 var(--main-green);
 }
 
 @media screen and (max-width: 830px) {
     .contactwrapper{
         justify-content: center;
+        max-width: 90%;
     }
 }
 
@@ -293,7 +287,7 @@ position: relative;
       .listitem {
         line-height: 4;
         color: var(--main-green);
-        margin-bottom: 1rem;
+ 
       }
       @media screen and (max-width: 830px) {
         .listitem{
@@ -391,6 +385,7 @@ position: relative;
     color: #777;
     letter-spacing: 1px;
     text-align: center;
+    margin-top: 0.5rem;
   }
   
   .hrr {
