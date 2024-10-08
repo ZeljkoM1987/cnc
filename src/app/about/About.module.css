@@ -1,76 +1,105 @@
 .container {
-    position: relative;
-    /*background-color: #222222;*/
-    /*border-radius: 15px;*/
-    padding: 73px;
-    /*margin-top: 100px;*/
-    padding-top: 200px;
-    z-index: 1;
-    /*margin-left: 10%;*/
-    /*margin-right: 10%;*/
-    background-image: url(/images/Back4.png);
-  }
+        /*height: 100vh;*/
+        background-image: url(/images/Back4.png);
+        color: whitesmoke;
+       /*padding: 4rem 0;*/
+       position: relative;
+       overflow: hidden;
+    }
   
-  .title {
-    color: #fff;
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 1.75px;
-    text-transform: uppercase;
-  }
-  
-  .content {
+  .headercontainer{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-  
+      text-align: center;
+      padding-top: 4rem;
+      padding-bottom: 2rem;
+      background-image: url(/images/back2.jpg);
+      height: 500px; /* You must set a specified height */
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+    background-attachment: fixed;
   }
+  .headercontainer h1{
+    font-family: var(--font-chakra);
+    font-size:3rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
   
-  .aboutintro {
+  .contentabout {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-  
-  }
-  
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: rgba(33, 30, 30, 0.62);
+    backdrop-filter: blur(3.2px);
+    -webkit-backdrop-filter: blur(3.2px);
+    padding: 1rem 20px;
+  position: relative;
+    max-width: 1200px;
+    margin: 3rem auto;
+  clip-path: polygon(40px 0px, 100% 0px, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0px 100%, 0px 40px);}
+
   
   
   .aboutImage {
-    max-width: 60%;
+    max-width: 50%;
     max-height: 400px;
     object-fit: cover;
     border: 5px solid whitesmoke;
+    clip-path: polygon(40px 0px, 100% 0px, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0px 100%, 0px 40px);
   }
   
   
-  .introtext {
-    text-align: center;
-    color: whitesmoke;
-    max-width: 50%;
-    padding: 14px;
-    background-image: linear-gradient(90deg,
-        rgba(165, 215, 232, 0.42) 0%,
-        rgba(255, 255, 255, 0) 100%);
-    border: 5px solid whitesmoke;
-   
-  }
-  
-  .introtext h2 {
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 18px;
-  
-  }
-  
-  .introtext p {
+  .aboutintrotext {
     text-align: justify;
-    font-size: 16px;
-    line-height: 26px;
+      color: whitesmoke;
+    max-width: 50%;
+    
+    margin: auto;
+    line-height: 30px;
+  }
+  .aboutintrotext1 {
+    text-align: justify;
+    color: whitesmoke;
+  max-width: 40%;
+  
+  margin: auto;
+  line-height: 30px;
+  }
+  .aboutbutton1 {
+    padding-top: 40px;
+    margin: auto;
+  width: 100%;
+    text-align: center;
+  }
+
+  .bannerabout {
+
+   padding: 20px 0;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 3rem;
+ 
+    color: whitesmoke;
+    max-width: 76%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    font-size:x-large;
+    font-style: italic;
+    font-family: var(--font-chakra);
+    position: relative;
   }
   
-  .aboutItems {
+ 
+  
+  /*.aboutItems {
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -103,17 +132,22 @@
   
   .aboutItem p {
     font-size: 25px;
+  }*/
+  .featurebox {
+    display: flex;
+    flex-direction: column;
+
   }
-  
   .feature {
+    
     color: whitesmoke;
-  
-    margin-bottom: 10px;
-    margin-top: 50px;
+    margin-bottom: 20px;
   }
   
   .feature h2 {
-    font-size: 28px;
+    font-size: 38px;
+    text-align: center;
+    font-family: var(--font-chakra);
   }
   
   .cardsection {
@@ -130,26 +164,21 @@
       margin: auto;
       
     }
-  
-    .content {
-      flex-direction: column;
+    .headercontainer{
+      max-width: 100%;
+      padding-bottom: 0;
+      height: 400px;
+  }
+    .contentabout{
+      max-width: 90%;
+      padding: 1rem 0;
     }
   
-    .title {
-      font-size: 28px;
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
+   
+   
+   
   
-    .aboutItems {
-      margin-top: 29px;
-    }
   
-    .aboutItem {
-      padding-left: 0;
-      padding-right: 0;
-    }
   
     .aboutImage {
       max-width: 100%;
@@ -160,16 +189,32 @@
       flex-direction: column;
     }
   
-    .introtext {
+    .aboutintrotext  {
       max-width: 100%;
       width: 100%;
+      padding-top: 2rem ;
+    }
+    .aboutintrotext1 {
+      max-width: 100%;
+      width: 100%;
+      padding-top: 2rem ;
+      text-align: center;
     }
   
+    .bannerabout {
+      max-width: 95%;
+      font-size: 22px;
+    }
     .feature {
       margin-top: 10px;
+    }
+    .feature h2 {
+      font-size: 28px;
+    
     }
   
     .cardsection {
       flex-direction: column;
+    align-items: center;
     }
   }

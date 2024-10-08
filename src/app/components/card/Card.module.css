@@ -8,7 +8,8 @@
     height: 200px;
     margin: 10px;
     /*margin: 0 auto;*/
-    background-color: #04152d;
+   /* background-color: #04152d;*/
+   background-image: url(/images/Back4.png);
     border-radius: 15px;
     box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
 }
