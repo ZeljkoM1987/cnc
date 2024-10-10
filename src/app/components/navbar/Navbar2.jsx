@@ -53,8 +53,8 @@ export const Navbar2 = () => {
             <li className={pathname === "/about" ? `${styles.active}` : ""}>
               <Link href="/about">O nama</Link>
             </li>
-            <li className={pathname === "/projects" ? `${styles.active}` : ""}>
-              <Link href="/projects">Projekti</Link>
+            <li className={pathname === "/services" ? `${styles.active}` : ""}>
+              <Link href="/services">Usluge</Link>
             </li>
             <li className={pathname === "/contact" ? `${styles.active}` : ""}>
               <Link href="/contact">Kontakt</Link>
@@ -84,8 +84,8 @@ export const Navbar2 = () => {
           <li className={pathname === "/about" ? `${styles.active}` : ""}>
             <Link href="/about">O nama</Link>
           </li>
-          <li className={pathname === "/projects" ? `${styles.active}` : ""}>
-            <Link href="/projects">Projekti</Link>
+          <li className={pathname === "/services" ? `${styles.active}` : ""}>
+            <Link href="/services">Usluge</Link>
           </li>
           <li className={pathname === "/contact" ? `${styles.active}` : ""}>
             <Link href="/contact">Kontakt</Link>

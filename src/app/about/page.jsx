@@ -21,7 +21,7 @@ export const AboutPage = () => {
 
         <div className={styles.aboutintrotext}>
 
-          <p>Hefest CAM smo mlada i ambiciozna kompanija specijalizovana za CNC obradu metala  sa fokusom na preciznost, kvalitet i pouzdanost. Sa savremenim proizvodnim pogonom i timom posvećenih stručnjaka,
+          <p>Hefest CAM je mlada i ambiciozna kompanija specijalizovana za CNC obradu metala  sa fokusom na preciznost, kvalitet i pouzdanost. Sa savremenim proizvodnim pogonom i timom posvećenih stručnjaka,
             težimo da ispunimo najviše standarde kvaliteta i preciznosti u izradi metalnih komponenti.</p>
           <p>Hefest CAM se nalazi na području Grada Gradiška, na 12 km udaljenosti od granice sa Evropskom unijom. Ovaj položaj nam omogućava brzu i efikasnu saradnju sa evropskim partnerima i  čini nas idealnim partnerom za kompanije koje traže
             kvalitetne CNC usluge uz minimalne logističke izazove.</p>
