@@ -145,8 +145,8 @@ const ContactPage = () => {
                 <li className={styles.listitem}>
                   <i className="fa fa-phone fa-2x">
                     <span className={`${styles.contacttext} ${styles.phone}`}>
-                      <a href="tel:1-212-555-5555" title="Give me a call">
-                        (212) 555-2368
+                      <a href="tel:+38765415657" title="Give me a call">
+                      +387 65 415 657
                       </a>
                     </span>
                   </i>
@@ -155,8 +155,8 @@ const ContactPage = () => {
                 <li className={styles.listitem}>
                   <i className="fa fa-envelope fa-2x">
                     <span className={`${styles.contacttext} ${styles.gmail}`}>
-                      <a href="mailto:#" title="Send me an email">
-                        hitmeup@gmail.com
+                      <a href="mailto: sajic.nemanj@gmail.com" title="Send me an email">
+                      sajic.nemanj@gmail.com
                       </a>
                     </span>
                   </i>
