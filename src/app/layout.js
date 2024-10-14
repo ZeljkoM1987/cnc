@@ -1,4 +1,4 @@
-import { Inter, Chakra_Petch } from "next/font/google";
+import { Inter, Chakra_Petch, Content } from "next/font/google";
 
 import "./globals.css";
 import { Navbar } from "./components/navbar/Navbar";
@@ -14,7 +14,8 @@ const chakra_Petch = Chakra_Petch({
 
 export const metadata = {
   title: "Hefest CAM - CNC obrada metala",
-  description: "CNC obrada metala",
+  description: "CNC obrada metala. Gradiška, Banja Luka, Glodanje, Tokarenje",
+  
 };
 
 export default function RootLayout({ children }) {
