@@ -1,4 +1,4 @@
-.button {
+.button1 {
     text-decoration: none;
     display: inline-block;
 
@@ -44,7 +44,7 @@
             0 20px);
 }
 
-.button::before {
+.button1::before {
 
     content: "";
 
@@ -70,7 +70,7 @@
 
 
 
-.button:hover {
+.button1:hover {
 
     background-color: transparent;
 
@@ -78,6 +78,6 @@
 
 }
 
-.button:hover::before {
+.button1:hover::before {
     left: 200%;
 }

@@ -4,7 +4,7 @@ import styles from "./Button.module.css";
 
 const Button = ({ path, children }) => {
     return (
-        <Link href={path} className={styles.button}>{children}</Link>
+        <Link href={path} className={styles.button1}>{children}</Link>
     );
 };
 

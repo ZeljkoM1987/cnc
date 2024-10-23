@@ -80,7 +80,7 @@ export const AboutPage = () => {
           <p>Hefest CAM nudi fleksibilne proizvodne opcije, prilagođene potrebama naših klijenata.</p>
           <p>Specijalizovani smo za pojedinačnu proizvodnju, prema tačnim specifikacijama i serijsku proizvodnju, manjeg i srednjeg obima.</p>
           <div className={styles.aboutbutton1}>
-          <Button path="/projects">Više o Servisima</Button>
+          <Button path="/services">Više o Servisima</Button>
         </div>
         </div>
 

@@ -117,7 +117,7 @@ export const About1 = () => {
         </div>
 
         <div className={styles.aboutbutton}>
-          <Button path="about">Više o Servisima</Button>
+          <Button path="/services">Više o Servisima</Button>
         </div>
       </section>
 

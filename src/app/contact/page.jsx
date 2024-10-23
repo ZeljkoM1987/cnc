@@ -1,11 +1,43 @@
 "use client";
 import React from "react";
+import { useState } from 'react';
+
 
 import styles from "./contactPage.module.css";
 import Button from "../components/button/Button";
 import { Bounce,Slide, Fade } from "react-awesome-reveal";
 
 const ContactPage = () => {
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [status, setStatus] = useState(null);
+
+  const handleChange = (e) => {
+      const { name, value } = e.target;
+      setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+ 
+
+  const handleSubmit = async (e) => {
+      e.preventDefault();
+
+      const response = await fetch('https://formspree.io/f/mldedwqy',  {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+    });
+
+
+      if (response.ok) {
+          setStatus('Thank you for your message!');
+          setFormData({ name: '', email: '', message: '' }); // Reset the form
+      } else {
+          setStatus('Oops! There was a problem.');
+      }
+  };
+
   return (
     <section className={styles.contactPageContainer}>
       <div className={styles.headercontainer}>
@@ -73,12 +105,11 @@ const ContactPage = () => {
             <form
               name="contact"
               className={styles.formhorizontal}
-              method="post"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
+              
+              onSubmit={handleSubmit}
             >
-              <input type="hidden" name="bot-field" />
-              <input type="hidden" name="form-name" value="contact" />
+             {/*<input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="contact" /> */} 
               <div className={styles.credencialContainer}>
                 <div>
                   <label htmlFor="name" className={styles.label}>
@@ -90,6 +121,8 @@ const ContactPage = () => {
                     id="name"
                     required
                     placeholder="Unesite ime"
+                    value={formData.name}
+                    onChange={handleChange} 
                     className={`${styles.input} ${styles.formControl}`}
                   />
                 </div>
@@ -103,6 +136,8 @@ const ContactPage = () => {
                     id="email"
                     required
                     placeholder="Unesite Vaš email"
+                    value={formData.email}
+                    onChange={handleChange} 
                     className={`${styles.input} ${styles.formControl}`}
                   />
                 </div>
@@ -118,16 +153,16 @@ const ContactPage = () => {
                     required
                     rows="10"
                     placeholder="Vaša Poruka"
+                    value={formData.message}
+                    onChange={handleChange} 
                     className={`${styles.textarea} ${styles.formControl}`}
                   ></textarea>
                 </div>
               </div>
               <div className={styles.btnContainer}>
-                <Button path="/">
-                  {" "}
-                  <i className="fa fa-paper-plane"></i>
-                  <span className={styles.sendtext}>Pošalji</span>
-                </Button>
+                <button type="submit" className={styles.sendtext}> <i className="fa fa-paper-plane"> </i>Pošalji</button>
+                {status && <p>{status}</p>}
+             
               </div>
             </form>
           </Bounce>

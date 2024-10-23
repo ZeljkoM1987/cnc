@@ -8,6 +8,7 @@
    overflow: hidden;
 }
 
+
 .headercontainer{
   display: flex;
   justify-content: center;
@@ -290,12 +291,60 @@ clip-path: polygon(40px 0px, 100% 0px, 100% calc(100% - 40px), calc(100% - 40px)
       }
 
       .sendtext {
+        
         margin-left: 10px;
         letter-spacing: 2px;
+        text-decoration: none;
+    display: inline-block;
+
+    padding: 13px 30px 10px;
+
+    background: var(--main-green);
+
+    border: 2px solid var(--main-green);
+
+    color: whitesmoke;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    letter-spacing: 2px;
+
+    font-size: 14px;
+
+    line-height: 1.3em;
+
+    font-weight: 400;
+
+    cursor: pointer;
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition: all 1s cubic-bezier(0.19, 1, 0.22,
+            1);
+
+    clip-path: polygon(20px 0,
+
+            100% 0,
+
+            100% calc(100% - 20px),
+
+            calc(100% - 20px) 100%,
+
+            0 100%,
+
+            0 20px);
       }
+     
 
-
-/*right side*/
+      .sendtext:hover {
+        background-color: transparent;
+        clip-path: none;
+      }
+      .sendtext i {
+        margin-right: 4px;
+      }
 
 .directcontactcontainer{
     max-width: 450px
