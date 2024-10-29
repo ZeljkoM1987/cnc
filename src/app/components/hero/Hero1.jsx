@@ -10,7 +10,7 @@ export const Hero1 = () => {
 
 
       <div className={styles.hero}>
-        <video autoPlay muted loop className={styles.herovideo} src="hero.mp4" ></video>
+        <video autoPlay muted loop playsInline className={styles.herovideo} src="hero.mp4" ></video>
 
         <div className={styles.herotext5}>
           <Slide direction="down" >
