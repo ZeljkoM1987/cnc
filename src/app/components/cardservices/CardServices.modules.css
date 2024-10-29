@@ -203,9 +203,9 @@
             }
           }
           @media all and (max-width:720px) {
-            body {
+         /*   body {
               padding:48px 24px 0
-            }
+            }*/
             section.card {
               margin:64px 0;
               padding:88px 36px 36px;

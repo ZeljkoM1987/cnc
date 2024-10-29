@@ -88,3 +88,19 @@
       .visual  img { 
       height:110%
     }
+
+    @media screen and (max-width: 830px) {
+      .servicesPageContainer {
+        background-color: transparent;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+        
+      }
+      .headercontainer{
+        max-width: 100%;
+        padding-bottom: 0;
+        height: 400px;
+    }
+ 
+  }

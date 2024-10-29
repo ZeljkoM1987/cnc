@@ -12,3 +12,9 @@
 :root {
  --main-green:#5f935f;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  /* Ostali stilovi */
+}
