@@ -11,7 +11,7 @@ export const CardServices = () => {
       
     </div>
     <div className="visual">
-      <img src="/images/milling.jpg" alt="" />
+      <img src="/images/milling.jpg" alt="cnc obrada glodanje gradiska" />
     </div>
   </section> 
    <section className="card">
@@ -23,7 +23,7 @@ export const CardServices = () => {
      
    </div>
    <div className="visual">
-     <img src="/images/turning.jpg" alt="hefest turning" />
+     <img src="/images/turning.jpg" alt="cnc obrada tokarenje gradiska" />
    </div>
  </section> 
  <section className="card">
@@ -34,7 +34,7 @@ export const CardServices = () => {
      
    </div>
    <div className="visual">
-     <img src="/images/camcad.png" alt="hefest cam cad" />
+     <img src="/images/camcad.png" alt="cnc obrada gradiska cam cad" />
    </div>
  </section> 
 

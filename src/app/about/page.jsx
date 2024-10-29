@@ -15,7 +15,7 @@ export const AboutPage = () => {
 
         <img
           src="/images/hero2.jpg"
-          alt="cnc milling"
+          alt="cnc obrada metala hefestcam"
           className={styles.aboutImage}
         />
 
@@ -71,7 +71,7 @@ export const AboutPage = () => {
 
         <img
           src="/images/about2.jpg"
-          alt="cnc milling"
+          alt="hefestcam cnc glodanje"
           className={styles.aboutImage}
         />
 

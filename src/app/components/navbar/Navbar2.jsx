@@ -37,7 +37,7 @@ export const Navbar2 = () => {
         }
       >
         <a className={styles.logo} href="/">
-          <img src="/images/logo2.png" alt="logo" className={styles.logoimg} />
+          <img src="/images/logo2.png" alt="Hefestcam Gradiska" className={styles.logoimg} />
         </a>
         <div className={styles.menu}>
           <img
@@ -92,8 +92,8 @@ export const Navbar2 = () => {
           </li>
           <li>
             <div className={styles.language1}>
-              <img src="/images/sr.png" alt="srp" className="styles.flag" />
-              <img src="/images/en.png" alt="en" className="styles.flag" />
+              <img src="/images/sr.png" alt="srp hefestcam" className="styles.flag" />
+              <img src="/images/en.png" alt="en hefestcam" className="styles.flag" />
             </div>
           </li>
         </ul>

@@ -19,7 +19,7 @@ export const Card = ({ title, text, image }) => {
                 </div>
             </div>
             <div className={styles.face2}>
-                <img className={styles.face2img} src={image} alt="" />
+                <img className={styles.face2img} src={image} alt="cnc obrada metala Gradiška" />
                 <h2>{title}</h2>
             </div>
         </div>
