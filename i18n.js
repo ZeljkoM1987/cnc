@@ -50,7 +50,9 @@ i18n
             pocetna:"Početna",
             onama:"O nama",
             usluge:"Usluge",
-            kontakt:"Kontakt"
+            kontakt:"Kontakt",
+           
+
           },
           Hero1: {
             title1:"Preciznost",
@@ -143,7 +145,8 @@ intro:"Voljeli bismo čuti vaše mišljenje! Bilo da imate pitanje, trebate pomo
               pocetna:"Home",
               onama:"About Us",
               usluge:"Services",
-              kontakt:"Contact",          
+              kontakt:"Contact",   
+                
         },
         Hero1: {
           title1:"Precision",

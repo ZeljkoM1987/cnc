@@ -88,16 +88,16 @@ export const Navbar2 = () => {
           onClick={() => setMenuOpen(false)}
         >
           <li className={pathname === "/" ? `${styles.active}` : ""}>
-            <Link href="/">Početna</Link>
+            <Link href="/">{t('Navbar2.pocetna')}</Link>
           </li>
           <li className={pathname === "/about" ? `${styles.active}` : ""}>
-            <Link href="/about">O nama</Link>
+            <Link href="/about">{t('Navbar2.onama')}</Link>
           </li>
           <li className={pathname === "/services" ? `${styles.active}` : ""}>
-            <Link href="/services">Usluge</Link>
+            <Link href="/services">{t('Navbar2.usluge')}</Link>
           </li>
           <li className={pathname === "/contact" ? `${styles.active}` : ""}>
-            <Link href="/contact">Kontakt</Link>
+            <Link href="/contact">{t('Navbar2.kontakt')}</Link>
           </li>
           <li>
             <div className={styles.language1}>
