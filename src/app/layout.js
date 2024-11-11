@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
 
   const { t } = useTranslation();
   return (
-    <html lang="en">
+    <html >
 
       <head>
       <title>{t('RootLayout.title')}</title>
