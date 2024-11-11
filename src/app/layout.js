@@ -1,7 +1,6 @@
 "use client";
 import { Inter, Chakra_Petch, Content } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Navbar2 } from "./components/navbar/Navbar2";
@@ -38,11 +37,13 @@ export default function RootLayout({ children }) {
     i18n.changeLanguage(language);
   }, [i18n]);
 
-
+  const { t } = useTranslation();
   return (
     <html lang="en">
 
-      <Head>
+      <head>
+      <title>{t('RootLayout.title')}</title>
+        <link rel="icon" href="/images/favicon1.png" />
       <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -51,14 +52,14 @@ export default function RootLayout({ children }) {
           referrerPolicy="no-referrer"
           
         />
-       <title>HEFEST CAM-CNC obrada metala</title>
-        <meta name="description" content="Pouzdan partner za CNC obradu metala" />
+       
+        <meta name="description" content={t('RootLayout.description')}  />
         <meta name="robots" content="index, follow" />
-        <meta name="keywords" content="CNC obrada metala, obrada metala Gradiška, CNC obrada Banjaluka, CNC glodanje, pouzdan CNC partner" />
+        <meta name="keywords" content= {t('RootLayout.keywords')} />
         <link rel="canonical" href="https://www.hefestcam.com/" /> 
-         
       
-      </Head>
+      
+      </head>
        
       
       

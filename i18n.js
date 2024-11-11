@@ -114,7 +114,9 @@ intro:"Voljeli bismo čuti vaše mišljenje! Bilo da imate pitanje, trebate pomo
 
       },
       RootLayout: {
-        title:"HEFEST CAM - CNC obrada metala Gradiška"
+        title:"HEFEST CAM - CNC obrada metala Gradiška",
+         description: "Pouzdan partner za CNC obradu metala. Nalazimo se u Novoj Topoli, grad Gradiška.",
+         keywords:"CNC obrada metala, obrada metala Gradiška, CNC obrada Banjaluka, CNC glodanje,CNC tokarenje, pouzdan CNC partner"
       }
   
         }
@@ -205,7 +207,11 @@ intro:"Voljeli bismo čuti vaše mišljenje! Bilo da imate pitanje, trebate pomo
 
     },
     RootLayout: {
-      title:"HEFEST CAM - CNC Metal Machining Gradiska"
+      title:"HEFEST CAM - CNC Metal Machining Gradiska",
+      description: "A reliable partner for CNC metal machining. We are located in Nova Topola, the city of Gradiška.",
+     keywords:"CNC metal processing, metal processing Gradiska, CNC processing Banjaluka, CNC milling, CNC turning reliable CNC partner"
+
+
     }
 
 
