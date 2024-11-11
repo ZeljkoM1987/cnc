@@ -44,6 +44,8 @@ export default function RootLayout({ children }) {
       <head>
       <title>{t('RootLayout.title')}</title>
         <link rel="icon" href="/images/favicon1.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/logo2.png"/>
+
       <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
