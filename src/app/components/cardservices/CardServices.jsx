@@ -1,13 +1,16 @@
 
 import "./CardServices.modules.css";
+import { useTranslation } from 'react-i18next';
 
 export const CardServices = () => {
+  const { t } = useTranslation();
+
   return (
    <>
     <section className="card">
     <div className="text-content">
-      <h3>CNC GLODANJE</h3>
-      <p>Naša primarna usluga je CNC obrada metala glodanjem. Specijalizovani smo za pojedinačnu proizvodnju, prema tačnim specifikacijama i serijsku proizvodnju, manjeg i srednjeg obima. U radu koristimo mašine Hurco VMX24t. </p>  
+      <h3>{t('CardServices.title1')}</h3>
+      <p>{t('CardServices.description1')}</p>  
       
     </div>
     <div className="visual">
@@ -16,10 +19,8 @@ export const CardServices = () => {
   </section> 
    <section className="card">
    <div className="text-content">
-     <h3>CNC TOKARENJE</h3>
-     <p>Uslugu CNC tokarenja pružamo u saradnji sa našim partnerima, koji raspolažu velikim brojem mašina različitog kapaciteta i funkcionalnosti.
-     Na ovaj način u mogućnosti smo da prilagodimo uslugu vašim potrebama. Za više informacija kontaktirajte nas putem nekog od naših
-     kanala komunikacije sa korisnicima</p>  
+     <h3>{t('CardServices.title2')}</h3>
+     <p>{t('CardServices.description2')}</p>  
      
    </div>
    <div className="visual">
@@ -28,9 +29,8 @@ export const CardServices = () => {
  </section> 
  <section className="card">
    <div className="text-content">
-     <h3>CAM/CAD programiranje</h3>
-     <p> Naš tim koristi savremene alate kako bi osigurao maksimalnu preciznost i brzu realizaciju, prilagođenu vašim zahtevima. 
-        Bilo da vam je potreban prototip ili serijska proizvodnja, garantujemo vrhunski kvalitet i efikasnost.</p>  
+     <h3>{t('CardServices.title3')}</h3>
+     <p>{t('CardServices.description3')}</p>  
      
    </div>
    <div className="visual">

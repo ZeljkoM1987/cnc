@@ -52,7 +52,7 @@
   .language img {
     width: 32px;
     height: auto;
-    margin: 2px;
+    margin: 0 8px;
     cursor: pointer;
   }
   
@@ -189,7 +189,7 @@
     .language1 img {
       width: 32px;
       height: auto;
-      margin: 2px;
+      margin: 0 14px;
       cursor: pointer;
     }
     .title {

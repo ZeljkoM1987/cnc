@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./Navbar2.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useTranslation } from 'react-i18next';
 
 export const Navbar2 = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,6 +28,14 @@ export const Navbar2 = () => {
     };
   }, []);
 
+  const { i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    localStorage.setItem('language', lng);
+  };
+  const { t } = useTranslation();
+
   return (
     <>
       <nav
@@ -48,16 +57,16 @@ export const Navbar2 = () => {
           />
           <ul className={styles.menuItems}>
             <li className={pathname === "/" ? `${styles.active}` : ""}>
-              <Link href="/">Početna</Link>
+              <Link href="/">{t('Navbar2.pocetna')}</Link>
             </li>
             <li className={pathname === "/about" ? `${styles.active}` : ""}>
-              <Link href="/about">O nama</Link>
+              <Link href="/about">{t('Navbar2.onama')}</Link>
             </li>
             <li className={pathname === "/services" ? `${styles.active}` : ""}>
-              <Link href="/services">Usluge</Link>
+              <Link href="/services">{t('Navbar2.usluge')}</Link>
             </li>
             <li className={pathname === "/contact" ? `${styles.active}` : ""}>
-              <Link href="/contact">Kontakt</Link>
+              <Link href="/contact">{t('Navbar2.kontakt')}</Link>
             </li>
             <li>
               <div className={styles.language1}>
@@ -68,8 +77,8 @@ export const Navbar2 = () => {
           </ul>
         </div>
         <div className={styles.language}>
-          <img src="/images/sr.png" alt="srp" className="styles.flag" />
-          <img src="/images/en.png" alt="en" className="styles.flag" />
+          <img src="/images/sr.png" alt="srp" className="styles.flag"      onClick={() => changeLanguage('sr')}/>
+          <img src="/images/en.png" alt="en" className="styles.flag" onClick={() => changeLanguage('en')} />
         </div>
       </nav>
 
@@ -92,8 +101,8 @@ export const Navbar2 = () => {
           </li>
           <li>
             <div className={styles.language1}>
-              <img src="/images/sr.png" alt="srp hefestcam" className="styles.flag" />
-              <img src="/images/en.png" alt="en hefestcam" className="styles.flag" />
+              <img src="/images/sr.png" alt="srp hefestcam" className="styles.flag" onClick={() => changeLanguage('sr')} />
+              <img src="/images/en.png" alt="en hefestcam" className="styles.flag"onClick={() => changeLanguage('en')} />
             </div>
           </li>
         </ul>

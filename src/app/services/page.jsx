@@ -1,13 +1,22 @@
-import React from "react";
+"use client"
 import styles from "./servicesPage.module.css";
 import { CardServices } from "../components/cardservices/CardServices";
+import { useTranslation } from 'react-i18next';
+import Layout from '../layout';
+import React, { createContext } from 'react';
+
+
+
 
 const ProjectsPage = () => {
+
+  const { t } = useTranslation();
   return (
     
+   
  <section className={styles.servicesPageContainer}>
     <div className={styles.headercontainer}>
-      <h1>USLUGE</h1>
+      <h1>{t('services')}</h1>
     </div>
     <div className={styles.firstBlock}>
     {/*<div className={styles.textcontent}>
@@ -27,7 +36,7 @@ const ProjectsPage = () => {
       
         
      
-
+  
         
   );
 };

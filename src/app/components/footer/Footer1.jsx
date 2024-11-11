@@ -1,8 +1,11 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 import Link from "next/link";
 import "./FooterStyle.css";
 
 export const Footer1 = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
     
@@ -17,12 +20,12 @@ export const Footer1 = () => {
               ></img>
              
             </div>
-            <p>Hefest CAM je vaš pouzdan partner za CNC obradu metala.</p>
+            <p>{t('Footer1.slogan')}</p>
           </div>
           <div className="column about">
             <div>
               <div className="footer-title">
-                <h4>Kako do nas?</h4>
+                <h4>{t('Footer1.contact')}</h4>
               </div>
               <div className="divider">
                 <span></span>
@@ -44,7 +47,7 @@ export const Footer1 = () => {
               </li>
               <li>
                 <span className="fa-regular fa-clock icon"></span>
-                <p>Ponedeljak - Subota: 07h - 15h</p>
+                <p>{t('Footer1.radnovrijeme')}</p>
               </li>
             </ul>
           </div>
@@ -54,7 +57,7 @@ export const Footer1 = () => {
           <div className="column post">
             <div>
               <div className="footer-title">
-                <h4>Naša Lokacija</h4>
+                <h4>{t('Footer1.location')}</h4>
               </div>
               <div className="divider">
                 <span></span>

@@ -3,6 +3,7 @@ import { Hero1 } from "./components/hero/Hero1";
 import { About1 } from "./components/about1/About1";
 
 
+
 const Home = () => {
   return (
     <div className={styles.app}>
