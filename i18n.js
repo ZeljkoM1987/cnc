@@ -44,7 +44,7 @@ i18n
             slogan:"Hefest CAM je vaš pouzdan partner za CNC obradu metala.",
             contact:"Kako do nas?",
              location:"Naša lokacija",
-             radnovrijeme: "Ponedeljak - Subota: 07h - 15h"
+             radnovrijeme: "Ponedeljak - Subota: 09h - 17h"
           },
           Navbar2: {
             pocetna:"Početna",
@@ -112,7 +112,7 @@ intro:"Voljeli bismo čuti vaše mišljenje! Bilo da imate pitanje, trebate pomo
       adresa:"Adresa",
       telefon:"Telefon",
       radnovrijeme:"Radno vrijeme",
-      radnovrijeme1: "Ponedeljak - Subota: 07h - 15h"
+      radnovrijeme1: "Ponedeljak - Subota: 09h - 17h"
 
       },
       RootLayout: {
@@ -139,7 +139,7 @@ intro:"Voljeli bismo čuti vaše mišljenje! Bilo da imate pitanje, trebate pomo
           slogan:"Hefest CAM is your reliable business partner for CNC metal processing.",
           contact:"How to reach us?",
           location:"Our location",
-           radnovrijeme: "Monday - Saturday: 07:00 - 15:00",
+           radnovrijeme: "Monday - Saturday: 09:00 - 17:00",
           },
           Navbar2: {
               pocetna:"Home",
@@ -206,7 +206,7 @@ intro:"Voljeli bismo čuti vaše mišljenje! Bilo da imate pitanje, trebate pomo
       adresa:"Address:",
       telefon:"Phone number:",
       radnovrijeme:"Business hours:",
-      radnovrijeme1: "Monday - Saturday: 7:00 AM - 3:00 PM"
+      radnovrijeme1: "Monday - Saturday: 09:00 AM - 17:00 PM"
 
     },
     RootLayout: {
