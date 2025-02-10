@@ -233,8 +233,8 @@ const ContactPage = () => {
                  <li className={styles.listitem}>
                 <h3>E-mail:</h3>
                 <div className={styles.listcontent}>
-                <a href="mailto: sajic.nemanj@gmail.com" title="Send me an email">
-                      sajic.nemanj@gmail.com
+                <a href="mailto: hefestcam@gmail.com" title="Send me an email">
+                 hefestcam@gmail.com
                       </a>
                 </div>
                  </li>
