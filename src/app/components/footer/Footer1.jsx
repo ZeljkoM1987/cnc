@@ -43,7 +43,7 @@ export const Footer1 = () => {
               </li>
               <li>
                 <span className="fa fa-paper-plane icon"></span>
-                <p>sajic.nemanj@gmail.com</p>
+                <p>hefestcam@gmail.com</p>
               </li>
               <li>
                 <span className="fa-regular fa-clock icon"></span>
