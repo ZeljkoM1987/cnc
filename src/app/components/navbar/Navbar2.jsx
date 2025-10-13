@@ -66,7 +66,7 @@ export const Navbar2 = () => {
               <Link href="/services">{t('Navbar2.usluge')}</Link>
             </li>
              <li className={pathname === "/products" ? `${styles.active}` : ""}>
-              <Link href="/services">{t('Navbar2.products')}</Link>
+              <Link href="/products">{t('Navbar2.products')}</Link>
             </li>
             <li className={pathname === "/contact" ? `${styles.active}` : ""}>
               <Link href="/contact">{t('Navbar2.kontakt')}</Link>
@@ -100,7 +100,7 @@ export const Navbar2 = () => {
             <Link href="/services">{t('Navbar2.usluge')}</Link>
           </li>
            <li className={pathname === "/products" ? `${styles.active}` : ""}>
-            <Link href="/services">{t('Navbar2.products')}</Link>
+            <Link href="/products">{t('Navbar2.products')}</Link>
           </li>
           <li className={pathname === "/contact" ? `${styles.active}` : ""}>
             <Link href="/contact">{t('Navbar2.kontakt')}</Link>
