@@ -8,17 +8,17 @@ export const Footer1 = () => {
 
   return (
     <footer className="footer">
-    
+
       <section className="body">
         <div className="bodyInner">
-        <div className="columnlogo">
+          <div className="columnlogo">
             <div className="headerLogo">
               <img
                 src="/images/logo2.png"
                 alt="centar logo"
-                
+
               ></img>
-             
+
             </div>
             <p>{t('Footer1.slogan')}</p>
           </div>
@@ -51,9 +51,9 @@ export const Footer1 = () => {
               </li>
             </ul>
           </div>
-         
-         
-          
+
+
+
           <div className="column post">
             <div>
               <div className="footer-title">
@@ -65,8 +65,8 @@ export const Footer1 = () => {
             </div>
             <div className="postlist">
               <iframe
-               src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d677.091936453523!2d17.321031653618604!3d45.056097863837415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1skrajisnik%2035!5e1!3m2!1shr!2sba!4v1727126532688!5m2!1shr!2sba"
-        
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d677.091936453523!2d17.321031653618604!3d45.056097863837415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1skrajisnik%2035!5e1!3m2!1shr!2sba!4v1727126532688!5m2!1shr!2sba"
+
                 width="100%"
                 height="300"
                 style={{ border: "0", overflow: "hidden", margin: "0" }}

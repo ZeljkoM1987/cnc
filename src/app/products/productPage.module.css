@@ -1,0 +1,48 @@
+.container {
+        /*height: 100vh;*/
+        background-image: url(/images/Back4.png);
+        color: whitesmoke;
+       /*padding: 4rem 0;*/
+       position: relative;
+       overflow: hidden;
+    }
+  
+  .headercontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      text-align: center;
+      padding-top: 4rem;
+      padding-bottom: 2rem;
+      background-image: url(/images/back2.jpg);
+      height: 500px; /* You must set a specified height */
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+    background-attachment: fixed;
+  }
+  .headercontainer h1{
+    font-family: var(--font-chakra);
+    font-size:3rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.Productblock{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    flex-wrap: wrap;
+    background: rgba(33, 30, 30, 0.62);
+    backdrop-filter: blur(3.2px);
+    -webkit-backdrop-filter: blur(3.2px);
+    padding: 5rem 20px;
+  position: relative;
+    max-width: 1200px;
+    margin: 3rem auto;
+  clip-path: polygon(40px 0px, 100% 0px, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0px 100%, 0px 40px);} 
+
+   @media screen and (max-width: 830px) {
+     
+        
+      }

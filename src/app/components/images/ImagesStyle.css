@@ -1,0 +1,63 @@
+.images-container-gr {
+    /* 
+    max-width: 1200px;
+    margin: 2rem auto;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+   
+    padding: 4rem;
+}
+
+.image-gallery {
+
+    width: 100%;
+    cursor: pointer;
+    height: 20rem;
+    margin: 0;
+    z-index: 1;
+}
+
+.image-gallery img {
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+    object-position: center;
+   
+    
+}
+
+.intro-text-img h2 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: center;
+    max-width: 75%;
+    margin: auto;
+  
+}
+
+@media screen and (max-width:900px) {
+    .intro-text-img  h2 {
+        font-size: 1.25rem;
+        max-width: 90%;
+        padding:0 0 2rem  0;
+    }
+
+.image-gallery img {
+    object-fit: contain;
+}
+.image-gallery  {
+    height: auto;
+}
+
+    .images-container-gr {
+
+
+
+
+        padding: 1rem;
+        padding-bottom: 0rem;
+    }
+}

@@ -51,6 +51,7 @@ i18n
             onama:"O nama",
             usluge:"Usluge",
             kontakt:"Kontakt",
+            products:"Naši radovi"
            
 
           },
@@ -115,6 +116,16 @@ intro:"Voljeli bismo čuti vaše mišljenje! Bilo da imate pitanje, trebate pomo
       radnovrijeme1: "Ponedeljak - Subota: 09h - 17h"
 
       },
+       ProductsPage: {
+      title:"Naši radovi",
+    
+
+    },
+     Images: {
+    
+      intro:"Predstavljamo vam deo proizvoda koje smo izrađivali za naše klijente. Uverite se u naš kvalitet!"
+
+    },
       RootLayout: {
         title:"HEFEST CAM - CNC obrada metala Gradiška",
          description: "Pouzdan partner za CNC obradu metala. Nalazimo se u Novoj Topoli, grad Gradiška.",
@@ -146,7 +157,7 @@ intro:"Voljeli bismo čuti vaše mišljenje! Bilo da imate pitanje, trebate pomo
               onama:"About Us",
               usluge:"Services",
               kontakt:"Contact",   
-                
+                products:"Project Gallery",
         },
         Hero1: {
           title1:"Precision",
@@ -208,6 +219,14 @@ intro:"Voljeli bismo čuti vaše mišljenje! Bilo da imate pitanje, trebate pomo
       radnovrijeme:"Business hours:",
       radnovrijeme1: "Monday - Saturday: 09:00 AM - 17:00 PM"
 
+    },
+    ProductsPage: {
+      title:"Project Gallery",
+      
+
+    },
+    Images: {
+intro:"Here is a selection of products we have manufactured for our clients. Experience our quality for yourself!",
     },
     RootLayout: {
       title:"HEFEST CAM - CNC Metal Machining Gradiska",
